@@ -4,10 +4,10 @@ import { SectionWrapper } from "../../common/SectionWrapper/SectionWrapper.style
 import "./ContactMe.scss";
 
 //assets
-import LinkedInIcon from "../../../../public/assets/linkedin.png";
-import githubIcon from "../../../../public/assets/github.png";
-import gmailIcon from "../../../../public/assets/gmail.png";
-import contactUsIllustration from "@/assets/contact_us_illustration.png";
+import LinkedInIcon from "../../../../public/linkedin.png";
+import githubIcon from "../../../../public/github.png";
+import gmailIcon from "../../../../public/gmail.png";
+import contactUsIllustration from "../../../../public/contact_us_illustration.png";
 import { ContainerWrapper } from "@/components/common/Container/ContainerWrapper.styled";
 import { Typography } from "@/elements/Typography/Typography.styled";
 import Link from "next/link";
@@ -15,7 +15,7 @@ import { useMediaQuery } from "react-responsive";
 
 const ContactMe = () => {
   const isDesktopOrLaptop = useMediaQuery({ minWidth: "1224px" });
-console.log(isDesktopOrLaptop)
+  console.log(isDesktopOrLaptop);
   return (
     <div className="contact-me">
       <SectionWrapper height="full">
@@ -62,6 +62,7 @@ console.log(isDesktopOrLaptop)
                   {isDesktopOrLaptop ? (
                     <Image
                       src={contactUsIllustration}
+                      unoptimized={true}
                       alt="contact-us"
                       width={250}
                       height={250}
@@ -69,6 +70,7 @@ console.log(isDesktopOrLaptop)
                   ) : (
                     <Image
                       src={contactUsIllustration}
+                      unoptimized={true}
                       alt="contact-us"
                       width={50}
                       height={50}
@@ -86,7 +88,8 @@ console.log(isDesktopOrLaptop)
                   <div className="d-flex align-items justify-content-center gap-2 contact-button">
                     <p>LinkedIn</p>
                     <Image
-                      src={LinkedInIcon}
+                      src={"/linkedin.png"}
+                      unoptimized={true}
                       alt="linkedIn"
                       width={24}
                       height={24}
@@ -102,6 +105,7 @@ console.log(isDesktopOrLaptop)
                     <p>Github</p>
                     <Image
                       src={githubIcon}
+                      unoptimized={true}
                       alt="linkedIn"
                       width={24}
                       height={24}
@@ -112,6 +116,7 @@ console.log(isDesktopOrLaptop)
                   <div className="d-flex align-items justify-content-center gap-2 contact-button">
                     <p>Gmail</p>
                     <Image
+                      unoptimized={true}
                       src={gmailIcon}
                       alt="linkedIn"
                       width={24}
