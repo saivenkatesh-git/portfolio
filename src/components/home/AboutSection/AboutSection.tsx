@@ -30,7 +30,7 @@ if(isDesktopOrLaptop){
         <ParallaxBanner style={{ aspectRatio: '2 / 1' ,height:'100%'}}>
          
           <ParallaxBannerLayer translateY={["1px","2px"]} style={{inset:"auto 1px 0 auto",position:'relative'}}  speed={100} >
-            <img src='/assets/second-section-gradient.png'
+            <img src='/second-section-gradient.png'
             alt='background-gradient'  className={"backgroundGradient"}/>
              
           </ParallaxBannerLayer>

@@ -15,12 +15,12 @@ const tempArray = [
   {
     name:"string",
     description:"string",
-    image:"/assets/React-icon.svg.png"
+    image:"/React-icon.svg.png"
   },
   {
     name:"string",
     description:"string",
-    image:"/assets/React-icon.svg.png"
+    image:"/React-icon.svg.png"
   }
 ]
 

@@ -21,11 +21,11 @@ function BannerSection() {
         <ParallaxBanner style={{ aspectRatio: '2 / 1', height: '100vh' }}>
 
           <ParallaxBannerLayer translateY={["-10px", "20px"]} style={{ inset: "auto 1px 0 auto" }} speed={10} >
-            <img src='/assets/banner-bottom-illustration.png'
+            <img src='/banner-bottom-illustration.png'
               alt='banner-illustration' className={"lowerIllustration"} />
           </ParallaxBannerLayer>
           <ParallaxBannerLayer translateY={["1px", "2px"]} style={{ inset: "auto 1px 0 auto" }} speed={100} >
-            <img src='/assets/banner-gradient.png'
+            <img src='/banner-gradient.png'
               alt='background-gradient' className={"backgroundGradient"} />
           </ParallaxBannerLayer>
           <ParallaxBannerLayer speed={-65} style={{ zIndex: 100 }}>

@@ -15,7 +15,7 @@ import { ContainerWrapper } from '@/components/common/Container/ContainerWrapper
 import { Typography } from '@/elements/Typography/Typography.styled';
 
 //assets
-import projectCardBg from '../../../../public/assets/glassCard.png'
+import projectCardBg from '../../../../public/images/glassCard.png'
 import { truncateDescription } from '@/utils/utilityFunctions';
 import Image from 'next/image';
 
@@ -73,16 +73,18 @@ const ProjectSection = () => {
                                                             alt=""
                                                         /> */}
                                                         <Image
+                      unoptimized={true}
                                                             data-atropos-offset="-4.5"
                                                             className='project-card-bg'
-                                                            src={'/assets/glassCard.png'}
+                                                            src={'/glassCard.png'}
                                                             alt=""
                                                         />
                                                         <div className='featuredImage-wrapper' data-atropos-offset="-1">
                                                             <div className='featuredImage'>
                                                                 {
                                                                     item.stackImages.map(image => {
-                                                                        return <Image key={image} src={image} alt={'stackImage'} />
+                                                                        return <Image
+                      unoptimized={true} key={image} src={image} alt={'stackImage'} />
                                                                     })
                                                                 }
                                                             </div>
